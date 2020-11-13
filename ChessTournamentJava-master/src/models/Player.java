@@ -28,6 +28,10 @@ public class Player extends Naming implements IPlayer {
     public String moves(Game game) {
         String result = "";
         counter++;
+        if(counter==21)
+        {
+            counter=1;
+        }
         result = Integer.toString(counter);
 //        result = counter + "";
 //        result = String.valueOf(counter);

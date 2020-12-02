@@ -1,0 +1,380 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+h2 {
+    font-size: 2.9rem;
+    color:white;
+  }
+h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    color:white;
+  }
+h4,h5{
+    font-size:2rem;
+}
+p{
+    color:white;
+    font-size: 1.5rem;
+}
+a {
+    color: white;
+    text-decoration: none;
+  }
+li{
+    font-size: 140%;
+}
+.main-header{
+    top:0;
+    width:100%;
+    height:90px;
+    position:sticky;
+    background-color:#131c27;
+    color:white;
+}
+nav{
+    display:flex;
+    height:100%;
+    align-items: center;
+}
+nav ul{
+    width:50%;
+    display:flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+#logo{
+    width: 50%;
+    padding-left: 100px;
+}
+.main_section1{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url("../images/SCHOOL.jfif");
+    /* background-color: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
+    background-image: url("../images/SCHOOL.jfif"); */
+    height: 420px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main_section1 h2{
+    padding:90px;
+}
+/* .main_section1 h3,.main_section2 h3{
+    padding:20px;
+} */
+.main_section2{
+    /* background-color: #343c44; */
+    height: 640px;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+#main_section2_div1{
+    height: 240px;
+    background-color: #343c44;
+}
+#main_section2_div1 h2{
+    padding:40px;
+}
+.cards{
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    height: 400px;
+}
+.card{
+    height:300px;
+    width: 400px;
+    color: black;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.card_icon{
+    display:flex;
+    background-color:#27394e;
+    height:100px;
+    align-items:center;
+    justify-content: center;
+}
+.card p,.card h4{
+    padding:1rem;
+    color:black;
+}
+.main_section3{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url("../images/neonbrand-1-aA2Fadydc-unsplash.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact_form{
+    height: 400px;
+    width:400px;
+    border-radius: 20px;
+    background: rgba(19, 28, 39, 0.8);
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+}
+#contact_form h2{
+    height: 80px;
+    margin-bottom: 105;
+}
+#contact_form form{
+    height:320px;
+    display:flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+#form_div1,#form_div2{
+    /* display:flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    color: white;
+    height: 60px;
+    position: relative;
+    top:40px;
+}
+
+label{
+    color:white;
+    font-size: 1.5rem;
+}
+#contact_form button{
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    margin-top: 150px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+footer{
+    display: flex;
+    background-color: #131c27;
+    height: 100px;
+    text-align: center;
+    color:white;
+    align-items:center;
+    justify-content: center;
+}
+/* --------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------- */
+#main2{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url("../images/more_background.jpg");
+    height: 620px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#container,#container2,#container3,#container4{   
+    margin-top: 30px;
+    height: 400px;
+    width:400px;
+    border-radius: 20px;
+    background: rgba(19, 28, 39, 0.8);
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    display: none;
+}
+form{
+    height: 320px;
+}
+.card2{
+    height:40px;
+}
+.cards2{
+    height:170px;
+    width:320px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* justify-content: space-evenly; */
+}
+#container3 .cards2,#container4 .cards2{
+    height:270px;
+}
+.select_courses{
+    height:100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+select{
+    
+    width:200px;
+}
+#container h2,#container2 h2,#container3 h2,#container4 h2{
+    height: 80px;
+    background-color: black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.buttons{
+    display: flex;
+    height: 50px;
+    width:400px;
+    align-self: flex-end;
+}
+.sub_button{
+        height: 50px;
+        width: 50%;
+        background-color: white;
+        border-bottom-left-radius: 20px;
+}
+.cancel_button{
+    height: 50px;
+    width: 50%;
+    background-color: white;
+    border-bottom-right-radius: 20px;
+    
+}
+
+.containers{
+    position:absolute;
+    height:70px;
+    background-color:rgb(19, 28, 39);
+    z-index: 10;
+
+}
+.containers h2{
+    height: 60px;
+}
+.project_options{
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
+button{
+    height: 30px;
+    background-color:rgb(19, 28, 39);
+    color: white;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+}
+.li_options{
+    height: 140px;
+    width:120px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    display: none;
+}
+#myTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  #myTable td, #myTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  /* #f2f2f2 */
+  #myTable tr:nth-child(even){background-color:rgb(19, 28, 39);color: white;}
+  #myTable tr:nth-child(odd){background-color: rgb(19, 28, 39);color: white;}
+  
+  #myTable tr:hover {background-color: #ddd;}
+  
+  #myTable tr:first-child {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+  /* ----------------------------------------------------------------------------------- */
+#main3{
+    width: 100%;
+    height: 1200px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url("../images/more_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: rgb(19, 28, 39); */
+}
+#space{
+    width: 1200px;
+    height: 1200px;
+    display: flex;
+    background-color: rgba(19, 28, 39, 0.8);
+    /* background-color: #343c44; */
+    /* background-color: white; */
+    /* margin-top: 90px; */
+}
+#keimena{
+    width: 600px;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.keimeno{
+    widows: 600px;
+    height: 300px;
+}
+/* .keimeno p{
+    color: black;
+} */
+#photos{
+    width: 600px;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center; 
+    text-align: center;
+}
+#photos img{
+    height: 300px;
+    width: 300px;
+}
+/* --------------------------BUTTONS MORE OPTIONS-------------------------------- */
+.project_more_options{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    display: none;
+    font-size: x-small;
+}
+.select_course{
+    background-color: #131c27;
+    color:white;
+    width:120px;
+}
+#table_buttons{
+    margin-top: 2px;
+    display: none;
+}
+#edit,#cancel2,#submit_table{
+    width: 403px;
+    border: 2px solid #4CAF50
+}

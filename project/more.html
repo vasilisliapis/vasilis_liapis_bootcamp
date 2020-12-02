@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav> 
+            <div id="logo">
+                <h1>ΣΧΟΛΕΙΟ</h1>
+            </div>            
+            <ul>
+                <li><a href="./index.html">Αρχική</a></li>
+                <li class="student">
+                    Μαθητές
+                    <div class="containers">
+                        <div class="opt1"> 
+                            <div class="li_options">
+                                <button id="btn1">ΠΡΟΣΘΗΚΗ</button><br>
+                                <!-- <button>ΑΛΛΑΓΗ</button> -->
+                                <button id="btn5">ΠΡΟΒΟΛΗ</button><br>
+                                <div class="project_options">
+                                    <button onclick="check1(1)">ΟΛΩΝ</button>
+                                    <!-- <button>ΟΛΩΝ</button><br> -->
+                                    <button id="btn8">ΑΝΑ ΜΑΘΗΜΑ</button><br>
+                                    <div class="project_more_options">
+                                        <select class="select_course" multiple>
+                                            <option value="programming" onclick="check1(2)">Προγραμματισμός</option>
+                                            <option value="maths" onclick="check1(3)">Αγγλικά</option>
+                                            <option value="english" onclick="check1(4)">Μαθηματικά</option>
+                                            <option value="physics" onclick="check1(5)">Φυσική</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="teacher">
+                    Δάσκαλοι
+                    <div class="containers">
+                        <div class="opt2">
+                            <div class="li_options">
+                                <button id="btn2">ΠΡΟΣΘΗΚΗ</button><br>
+                                <!-- <button>ΑΛΛΑΓΗ</button> -->
+                                <button id="btn6">ΠΡΟΒΟΛΗ</button><br>
+                                <div class="project_options">
+                                    <button onclick="check2(1)">ΟΛΩΝ</button>
+                                    <!-- <button>ΟΛΩΝ</button><br> -->
+                                    <button id="btn9">ΑΝΑ ΜΑΘΗΜΑ</button><br>
+                                    <div class="project_more_options">
+                                        <select class="select_course" multiple>
+                                            <option value="programming" onclick="check2(2)">Προγραμματισμός</option>
+                                            <option value="maths" onclick="check2(3)">Αγγλικά</option>
+                                            <option value="english" onclick="check2(4)">Μαθηματικά</option>
+                                            <option value="physics" onclick="check2(5)">Φυσική</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="course">
+                    Μαθήματα
+                    <div class="containers">
+                        <div class="opt3">
+                            <div class="li_options">
+                                <button id="btn3">ΠΡΟΣΘΗΚΗ</button><br>
+                                <button id="btn22">ΠΡΟΒΟΛΗ</button>
+                                <!-- <button>ΠΡΟΒΟΛΗ</button><br> -->
+                                <!-- <button>ΑΛΛΑΓΗ</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="assignments">
+                    Εργασίες
+                    <div class="containers">
+                        <div class="opt4">
+                            <div class="li_options">
+                                <button id="btn4">ΠΡΟΣΘΗΚΗ</button><br>
+                                <!-- <button>ΑΛΛΑΓΗ</button> -->
+                                <button id="btn7">ΠΡΟΒΟΛΗ</button><br>
+                                <div class="project_options">
+                                    <button onclick="check3(1)">ΟΛΩΝ</button>
+                                    <!-- <button>ΟΛΩΝ</button><br> -->
+                                    <button id="btn10">ΑΝΑ ΜΑΘΗΜΑ</button><br><br>
+                                    <div class="project_more_options">
+                                        <select class="select_course" multiple>
+                                            <option value="programming" onclick="check3(2)">Προγραμματισμός</option>
+                                            <option value="maths" onclick="check3(3)">Αγγλικά</option>
+                                            <option value="english" onclick="check3(4)">Μαθηματικά</option>
+                                            <option value="physics" onclick="check3(5)">Φυσική</option>
+                                        </select>
+                                    </div>
+                                    <button id="btn11">ΑΝΑ ΜΑΘΗΤΗ</button>
+                                    <div class="project_more_options">
+                                        <select class="select_course" multiple>
+                                            <option value="programming" onclick="check3(6)">Β.Οικονόμου</option>
+                                            <option value="maths" onclick="check3(2)">Γ.Κατσιφής</option>
+                                            <option value="english" onclick="check3(2)">Μ.Παππά</option>
+                                            <option value="physics" onclick="check3(3)">Ε.Δάρρα</option>
+                                            <option value="programming" onclick="check3(3)">Κ.Παντελής</option>
+                                            <option value="maths" onclick="check3(4)">Δ.Ράπτη</option>
+                                            <option value="english" onclick="check3(7)">Θ.θεωδορόπουλος</option>
+                                            <option value="physics" onclick="check3(8)">Κ.Ματθαίου</option>
+                                            <option value="programming" onclick="check3(3)">Σ.Παπαχαραλάμπους</option>
+                                            <option value="maths" onclick="check3(3)">Σωτήρης.Χ</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main2">
+        <table id="myTable">   
+        </table> 
+        <div id="table_buttons">
+            <button id="edit" onclick="edit_table()">Edit</button>
+            <button id="submit_table" onclick="sub_table()">Submit</button>
+            <button id="cancel2" onclick="hide_table()">Cancel</button>
+        </div> 
+        <div id="container">
+            <h2>Μαθητής</h2>
+            <form action="">
+                <div class="cards2">
+                    <div class="card2">
+                        <label for="fname">Όνομα:</label>
+                        <input type="text" id="s_fname" name="fname"><br>
+                    </div> 
+                    <div class="card2">
+                        <label for="lname">Επίθετο:</label>
+                        <input type="text" id="s_lname" name="lname"><br>
+                    </div>
+                    <div class="card2">       
+                        <label for="email">Email:</label>
+                        <input type="email" id="s_email" name="email"><br>
+                    </div>
+                    <div class="card2">       
+                        <label for="birth_date">Ημ.γέννησης:</label>
+                        <input type="date" id="s_birth_date" name="birth_date"><br>
+                    </div>
+                   
+                </div>
+                <div class="select_courses">
+                    <label for="courses">Διάλεξε μαθήματα:</label>
+                    <select name="courses" id="s_courses" multiple>
+                        <option value="programmin">Προγραμματισμός</option>
+                        <option value="maths">Μαθηματικά</option>
+                        <option value="english">Αγγλικά</option>
+                        <option value="physics">Φυσική</option>
+                    </select>
+                </div>
+                <div class="buttons">
+                    <input type="button" class="sub_button" onclick="check_student()" name="Submit" value="Submit">
+                    <input type="button" class="cancel_button" name="Cancel" value="Cancel">
+                </div>       
+            </form>
+        </div>
+        <div id="container2">
+            <h2>Δάσκαλος</h2>
+            <form action="">
+                <div class="cards2">
+                    <div class="card2">
+                        <label for="fname">Όνομα:</label>
+                        <input type="text" id="t_fname" name="fname"><br>
+                    </div> 
+                    <div class="card2">
+                        <label for="lname">Επίθετο:</label>
+                        <input type="text" id="t_lname" name="lname"><br>
+                    </div>
+                    <div class="card2">       
+                        <label for="email">Email:</label>
+                        <input type="email" id="t_email" name="email"><br>
+                    </div>
+                    <div class="card2">       
+                        <label for="birth_date">Ημ.γέννησης:</label>
+                        <input type="date" id="t_birth_date" name="birth_date"><br>
+                    </div>
+                   
+                </div>
+                <div class="select_courses">
+                    <label for="courses">Αντικείμενο Διδασκαλίας:</label>
+                    <select name="courses" id="t_courses" multiple>
+                        <option value="programmin">Προγραμματισμός</option>
+                        <option value="maths">Μαθηματικά</option>
+                        <option value="english">Αγγλικά</option>
+                        <option value="physics">Φυσική</option>
+                    </select>
+                </div>
+                <div class="buttons">
+                    <input type="button" class="sub_button" onclick="check_teacher()" name="Submit" value="Submit">
+                    <input type="button" class="cancel_button" name="Cancel" value="Cancel">
+                </div>       
+            </form>            
+        </div>
+        <div id="container3">
+            <h2>Μάθημα</h2>
+            <form action="">
+                <div class="cards2">
+                    <div class="card2">
+                        <label for="fname">Όνομα</label>
+                        <input type="text" id="c_title" name="fname"><br>
+                    </div> 
+                    <div class="card2">
+                        <label for="lname">Τύπος</label>
+                        <input type="text" id="c_type" name="lname"><br>
+                    </div>
+                    <div class="card2">       
+                        <label for="s_date">Ημ.Έναρξης</label>
+                        <input type="date" id="c_start_date" name="s_date"><br>
+                    </div>
+                    <div class="card2">       
+                        <label for="end_date">Ημ.Λήξης</label>
+                        <input type="date" id="c_end_date" name="end_date"><br>
+                    </div>
+                   
+                </div>
+                <div class="buttons">
+                    <input type="button" class="sub_button" onclick="check_course()" name="Submit" value="Submit">
+                    <input type="button" class="cancel_button" name="Cancel" value="Cancel">
+                </div>       
+            </form>
+        </div>
+        <div id="container4">
+            <h2>Εργασία</h2>
+            <form action="">
+                <div class="cards2">
+                    <div class="card2">
+                        <label for="fname">Όνομα</label>
+                        <input type="text" id="a_title" name="fname"><br>
+                    </div> 
+                    <div class="card2">
+                        <label for="lname">Τύπος</label>
+                        <input type="text" id="a_type" name="lname"><br>
+                    </div>
+                    <div class="card2">       
+                        <label for="s_date">Ημ.Έναρξης</label>
+                        <input type="date" id="a_start_date" name="s_date"><br>
+                    </div>
+                    <div class="card2">       
+                        <label for="end_date">Ημ.Λήξης</label>
+                        <input type="date" id="a_end_date" name="end_date"><br>
+                    </div>
+                   
+                </div>
+                <div class="buttons">
+                    <input type="button" class="sub_button" onclick="check_assignment()" name="Submit" value="Submit">
+                    <input type="button" class="cancel_button" name="Cancel" value="Cancel">
+                </div>       
+            </form>
+        </div>
+    </main>
+    <footer>
+        <h5>Σχολείο &copy;</h5>
+    </footer>
+    <script src="js/script_database.js"></script>
+    <script src="js/jquery_practice.js"></script>
+    <script src="js/js_practise.js"></script>
+    <script src="js/script3.js"></script>
+</body>
+</html>
